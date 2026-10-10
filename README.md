@@ -1,80 +1,115 @@
-<div align="center">
-📊 Sales Data Analyzer & Visualization
+# 📊 Sales Data Analyzer
 
----
-📝 About the Project
-Sales Data Analyzer & Visualization is a Python application that works with sales records stored in a CSV file. It provides a simple terminal menu so users can choose different operations without needing to write a separate command for each task.
-The project demonstrates data analysis using Pandas and NumPy, visualization using Matplotlib and Seaborn, and basic Object-Oriented Programming (OOP).
-✨ Features
-Feature	Description
-🔍 Data Exploration	Display the first and last five rows, column names, and data types.
-🧹 Missing Data	Find missing values and fill or remove them.
-🔎 Search	Search sales records by product category.
-↕️ Sort & Filter	Sort by profit and filter records by customer country.
-🌍 Grouped Summary	Calculate total revenue and profit for each country.
-📋 Pivot Table	Summarize revenue by country and product category.
-🔢 NumPy Operations	Convert profit values to an array and perform basic calculations.
-📈 Statistics	Calculate mean, standard deviation, minimum, and maximum.
-💾 Save Charts	Save generated visualizations as PNG images.
-📊 Available Charts
-Bar Plot — compare profit across product categories
-Line Plot — view revenue trends by date
-Scatter Plot — compare quantity and profit
-Pie Chart — compare revenue share by country
-Histogram — view the distribution of profit values
-Stack Plot — display revenue by product category
-Heatmap — explore profit across countries and product categories
-🧰 Built With
-<p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white">
-  <img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white">
-  <img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white">
-  <img alt="Matplotlib" src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge">
-  <img alt="Seaborn" src="https://img.shields.io/badge/Seaborn-76B900?style=for-the-badge">
-</p>
-📁 Project Structure
+## 📌 Project Overview
+
+Sales Data Analyzer is a Python-based data analysis project that helps users explore, analyze, and visualize sales data stored in CSV files. It uses popular Python libraries to perform data operations, generate statistical summaries, handle missing values, and create different types of charts.
+
+This project is designed to practice Python programming, data analysis, and data visualization using real-world sales data.
+
+## ✨ Features
+
+- **Load CSV Data:** Import sales datasets from CSV files.
+- **Explore Data:** View the first and last five rows, column names, data types, and dataset information.
+- **DataFrame Operations:** Search product categories, sort profits, filter records by country, group sales data, and create pivot tables.
+- **Missing Data Handling:** Identify missing values, fill numeric missing values with the mean, remove incomplete rows, or replace missing values with zero.
+- **Descriptive Statistics:** Calculate mean, standard deviation, minimum, and maximum values.
+- **Data Visualization:** Generate bar plots, line plots, scatter plots, pie charts, histograms, stack plots, and Seaborn heatmaps.
+- **Save Charts:** Save generated visualizations as PNG images in the output folder.
+- **NumPy Operations:** Perform basic array operations and calculate average profit.
+- **Interactive Menu:** Navigate through different features using a simple console-based menu.
+
+## 🛠️ Technologies Used
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- Seaborn
+
+## 📂 Project Structure
+
 ```text
 VISUALIZER/
+│
 ├── data/
 │   └── sales_data.csv
+│
 ├── outputs/
+│   └── saved charts
+│
 ├── main.py
-└── README.md
 ```
-`main.py` — main Python program
-`data/sales_data.csv` — dataset used by the analyzer
-`outputs/` — location for saved chart images
-`README.md` — project documentation
-⚙️ Installation & Setup
-1. Download or clone the repository
+
+*Note: Adjust the filenames and folders according to your actual repository structure.*
+
+## ⚙️ Installation and Setup
+
+### 1. Clone the Repository
+
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone YOUR_REPOSITORY_URL
 ```
-Then open the project folder in VS Code.
-2. Install the required libraries
+
+### 2. Open the Project Folder
+
 ```bash
-pip install pandas numpy matplotlib seaborn
+cd Sales-Data-Analyzer
 ```
-3. Run the application
-Run this command from the `VISUALIZER` folder:
+
+### 3. Install Required Libraries
+
+```bash
+pip install numpy pandas matplotlib seaborn
+```
+
+Alternatively, if you have a `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Add the Dataset
+
+Place your sales CSV file inside the `data` folder and ensure its name and path match the one used in the Python program.
+
+### 5. Run the Program
+
 ```bash
 python main.py
 ```
-The program expects the CSV file to be located at `data/sales_data.csv`. Keep the folder and filename unchanged unless you also update the file path in the code.
-🧠 OOP Concepts
-The project uses a `SalesDataAnalyzer` class to organize its operations. Class methods are used for loading and exploring data, handling missing values, performing calculations, creating charts, and saving visualizations.
-🎓 Learning Outcomes
-By working on this project, users can practice:
-Reading CSV files with Pandas
-Working with DataFrames and NumPy arrays
-Searching, sorting, filtering, and grouping data
-Handling missing values
-Using descriptive statistical functions
-Creating plots with Matplotlib and Seaborn
-Organizing a Python program with a class
-👤 Author
-Created as a Python data analysis and visualization project for educational purposes.
----
-<div align="center">
-Made with Python • Pandas • NumPy • Matplotlib • Seaborn
-</div>
+
+## 📈 Visualizations
+
+The project supports different visualizations to understand sales performance, profit distribution, revenue trends, and country-wise results.
+
+Available charts include:
+
+- Profit by Product Category
+- Revenue Trend
+- Quantity vs Profit
+- Revenue by Country
+- Profit Distribution
+- Revenue Stack Plot
+- Profit Heatmap
+
+Generated charts can be saved as PNG files for future reference.
+
+## 🎯 Learning Objectives
+
+This project demonstrates practical knowledge of Python classes, functions, exception handling, CSV file processing, Pandas DataFrames, NumPy arrays, descriptive statistics, and data visualization.
+
+## 🚀 Future Improvements
+
+- Add a graphical user interface.
+- Include more interactive charts.
+- Export analysis reports to CSV or PDF.
+- Add advanced sales performance comparisons.
+- Improve dataset validation and error handling.
+
+## 👨‍💻 Author
+
+Developed as a Python data analysis project to practice programming, data processing, and visualization skills.
+
+## 📄 License
+
+This project is available for educational and learning purposes.
