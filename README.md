@@ -1,12 +1,6 @@
 <div align="center">
 📊 Sales Data Analyzer & Visualization
-A menu-driven Python project for exploring, analyzing, and visualizing sales data.
-![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-11557c)
-![Seaborn](https://img.shields.io/badge/Seaborn-Heatmaps-76B900)
-</div>
+
 ---
 📝 About the Project
 Sales Data Analyzer & Visualization is a Python application that works with sales records stored in a CSV file. It provides a simple terminal menu so users can choose different operations without needing to write a separate command for each task.
